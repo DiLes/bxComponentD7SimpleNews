@@ -11,5 +11,10 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
-echo '<pre>'; print_r($arResult["ELEMENTS"]); echo '</pre>';
+//echo '<pre>'; print_r($arResult["ELEMENTS"]); echo '</pre>';
+?>
+<?
+foreach ($arResult["ELEMENTS"] as $arItems) {
+    echo '<pre>'; print_r($arItems); echo '</pre>';
+}
 ?>
